@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มสมัครสมาชิก</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>ใบสมัครสมาชิก<br>
+            สมาคมกีฬาจังหวัดมุกดาหาร
+        </h2>
+        <form action="data.php" method="post">
+            <div class="form_wrapper">
+                <label for="name">ข้าพเจ้า</label>
+                <input id="name" type="text" name="name" required><br>
+                <label for="age">อายุ</label>
+                <input id="age" type="text" name="age" required> ปี<br>
+                <label for="birthdate">เกิดวันที่</label>
+                <input id="birthdate" type="date" name="birthdate" required><br>
+                <label for="organization">ในนาม(ระบุตำแหน่งและชื่อหน่วยงานที่สมัคร)</label>
+                <input id="organization" type="text" name="organization" required><br>
+                <label for="address">อยู่บ้านเลขที่</label>
+                <input id="address" type="text" name="address" required><br>
+                <label for="village">หมู่</label>
+                <input id="village" type="text" name="village">
+                <label for="soi">ซอย</label>
+                <input id="soi" type="text" name="soi">
+                <label for="street">ถนน</label>
+                <input id="street" type="text" name="street"><br>
+                <label for="subdistrict">ตำบล</label>
+                <input id="subdistrict" type="text" name="subdistrict">
+                <label for="district">อำเภอ</label>
+                <input id="district" type="text" name="district">
+                <label for="province">จังหวัด</label>
+                <input id="province" type="text" name="province"><br>
+                <label for="postalcode">รหัสไปรษณีย์</label>
+                <input id="postalcode" type="text" name="postalcode"><br>
+                <label for="occupation">อาชีพ</label>
+                <input id="occupation" type="text" name="occupation">
+                <label for="workplace">ทำงานที่</label>
+                <input id="workplace" type="text" name="workplace"><br>
+                <label for="homephone">เบอร์โทรศัพท์บ้าน/ที่ทำงาน</label>
+                <input id="homephone" type="text" name="homephone">
+                <label for="mobilephone">หมายเลขโทรศัพท์มือถือ</label>
+                <input id="mobilephone" type="text" name="mobilephone"><br>
+                <button type="submit">ส่งข้อมูล</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resistor Calculator</h1>
+        <div class="tabs">
+            <h4>Select number of bands : </h4>
+            <button class="tab-button active" onclick="selectBand(4)">4 Band</button>
+            <button class="tab-button" onclick="selectBand(5)">5 Band</button>
+            <button class="tab-button" onclick="selectBand(6)">6 Band</button>
+        </div>
+        
+        <div class="calculator">
+            <div class="parameters">
+                <h2>Resistor Parameters</h2>
+                <label for="band1">1st Band of Color</label>
+                <select id="band1" onchange="calculateResistor()"></select>
+
+                <label for="band2">2nd Band of Color</label>
+                <select id="band2" onchange="calculateResistor()"></select>
+
+                <div id="band3Container" style="display: none;">
+                    <label for="band3">3rd Band of Color</label>
+                    <select id="band3" onchange="calculateResistor()"></select>
+                </div>
+
+                <label for="multiplier">Multiplier</label>
+                <select id="multiplier" onchange="calculateResistor()"></select>
+
+                <label for="tolerance">Tolerance</label>
+                <select id="tolerance" onchange="calculateResistor()"></select>
+
+                <div id="tempCoeffContainer" style="display: none;">
+                    <label for="tempCoeff">Temperature Coefficient</label>
+                    <select id="tempCoeff" onchange="calculateResistor()"></select>
+                </div>
+            </div>
+            
+            <div class="output">
+                <h2>Output</h2>
+                <canvas id="resistorImage" width="300" height="150"></canvas>
+                <p id="resistorValue"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
