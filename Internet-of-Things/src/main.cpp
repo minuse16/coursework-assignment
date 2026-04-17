@@ -5,9 +5,9 @@
 #include <SPIFFS.h> 
 #include <FS.h>
 
-#define BLYNK_TEMPLATE_ID "TMPL6td8JZ90X"
-#define BLYNK_TEMPLATE_NAME "Testmini"
-#define BLYNK_AUTH_TOKEN "qlZCShfXZs1pkAkq7or0PzwNNOOynARc"
+#define BLYNK_TEMPLATE_ID "xxx"
+#define BLYNK_TEMPLATE_NAME "xxxx"
+#define BLYNK_AUTH_TOKEN "xxx"
 
 #include <BlynkSimpleEsp32.h> 
 
@@ -24,7 +24,7 @@ void logData(int lightValue, String status, String timestamp);
 void sendDataToGoogleSheets(int lightValue, String status, String timestamp);
 
 #define LINE_TOKEN "r0WYHAV5tTwbrYkT0MWPofTFULVeKBnH94FTa8vow2l"
-String GOOGLE_SHEETS_ID = "AKfycbxaRw4i0yg36ZFNlu9udFcHpMIMFn19k66hmKNGIPSpImKYIkH1g7tQclJ27nDmWf7RiA";
+String GOOGLE_SHEETS_ID = "xxx";
 LINE_Notify_Massage_Option_t lightON;
 LINE_Notify_Massage_Option_t lightOFF;
 
